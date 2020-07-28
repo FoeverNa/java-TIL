@@ -1,18 +1,23 @@
-package com.company;
+# 자료형(Data Type)
+## 자료형이란
+- 변수의 종류와 타입을 나타내는 용어
+- 변수의 선언할 때 리터럴에 따라 자료형을 필수로 표기해야함
+- 자료형은 기본형(Primitive Type), 참조형 (Reference Type)으로 구분함
+- 기본형 자료형에는 정수형, 실수형, 문자형, 논리형이 있음
+- 참조형에는 String(문자형)외 여러가지가 있음
 
+### 정수형
 
+- 정수형에는 byte, short, int, long이 있음
+- 각 자료형 별로 메로리의 크기와 그에 따른 표현범위가 다름
+- 메모리의 효율적 사용을 위해서 범위에 맞는 자료형을 사용함
+- 정수 자료형의 기본 형은 int이기에 다른 자료형을 쓸때는 별도로 표기히야함
+- 정수 자료형은 값의 변동에 따라 overflow가 발생할 수 있으니 유의해야함
+- 정수 자료형은 10진수 뿐 아니라 2진수 8진수 16진수로도 표현 가능함
 
-/**
- * 자료형(Data Type)
- * 자료형 - 기본형(Primitive Type), 참조형 (Reference Type)
- * 기본형 자료형 - 정수형, 실수형, 문자형, 논리형
- * 참조형 - 문자열 (String) 나머지는 나중에 배우겠습니다.
- */
+```
+        // 정수 자료형 
 
-public class Main {
-
-    public static void main(String[] args) {
-       /* //정수형 : byte, short, int, long
         System.out.println(Byte.BYTES);
         System.out.println("Byte");
         System.out.println(Byte.BYTES); //1 // Byte자료형은 1BYTE라는 뜻 = 8bit
@@ -43,7 +48,9 @@ public class Main {
         System.out.println(Long.MIN_VALUE);// -2^63
         System.out.println("");
 
-        //왜 다 Long으로 안하냐 - 메모리 효율성위해, 필요에 따라 사용하여야 한다.
+        //왜 다 Long으로 자료형을 안하냐 - 메모리 효율성위해, 필요에 따라 사용하여야 한다.
+
+        //정수자료형의 유의할 점
 
         //Overflow
         // 32676 = 2^15 - 1 ==> 0111111111111111
@@ -53,7 +60,8 @@ public class Main {
         short shortValue = (short) 64000; //숫자를 short형으로 바꿈
         System.out.println(shortValue); // -1536,
 
-        // 정수형은 기본적으로 int
+        // 정수형은 기본적으로 int이기 때문에 다른 유형의 정수 선언시 별도로 표기해주어야함
+
         // byte byteValue3 = 144; // byte지만 기본 형인 int형으로 표현됨 so 4byte자료형으로표현됨
 
         short shortA = 10;
@@ -85,14 +93,21 @@ public class Main {
         System.out.println(0x10); //0x를 하면 16진수입력, 0~9까지는 숫자 10~16 : a,b,c,d,e,f 까지쓰면됨
         System.out.println(0xff); //
 
-        //진수법을 언제쓰냐?
-        byte flagByte = 0b00101100; // 비트를 쪼개서 쓸때 사용한다. // 사실 이부분은 이해가 안됨
-
+      
         //리터럴은 어던 변수의 대입되지 않은 순수한 값 64000은 리터럴  대입이된 수는 리터럴이 아님
 
 
+```
+
+### 실수형
+
+- 실수 자료형으로는 float과 double이 있음
+- 기본형이 double이기에 연산할 때 double형으로 변환되어 연산됨
+- float 변수를 선언할때는 리터럴 끝에 f(F) 붙여줘야함
+- 실수 리터럴은 지수형으로 표현 가능
 
 
+```$xslt
         // 실수형 float, double
         System.out.println("float");
         System.out.println(Float.BYTES); // 4
@@ -118,7 +133,17 @@ public class Main {
         double doubleVal2 = 1.423e8; //e8 = 10^8  //10 몇승 포함해서
         double doubleVal3 = 1.423E8; // 대문자 소문자 둘다 가능
 
+```
 
+### 문자형
+
+- 문자형엔 Char 타입이 있음
+- 문자열이 아닌 문자형임으로 한개의 문자 리터럴만 대입가능
+- ''작은 따옴표를 사용함
+- Char을 int형으로 캐스팅할 수 있고 각 문자마다 숫자가 배정되어 있음
+- 문자에 배정된 숫자를 테이블로 정리한 것을 아스키코드/유니코드 라고 함
+
+```$xslt
         //문자형
         System.out.println("Char");
         System.out.println(Character.BYTES);
@@ -138,9 +163,13 @@ public class Main {
 
         System.out.println('\u0041'); //유니코드 칠땐 /u을 붙이고 뒤에 숫자는 16진수를 사용함// 16진수 41 => 65 == 'A'
         System.out.println((char)65);
+```
 
+###논리형
 
-        //논리형 // true, false 두가지 값만 허용됨
+- 논리를 판단하는 자료형으로 true와 false값만 가짐
+
+```$xslt
         System.out.println("boolean");
         System.out.println(Boolean.TRUE);
         System.out.println(Boolean.FALSE);
@@ -151,14 +180,15 @@ public class Main {
         // isTure =1; // 다른 언어에서는 1=true, 0=false로 대입이 가능하지만 Java에서는 안됨
         // isFalse = 0;
         System.out.println("");
+```
 
+###문자열
 
+- 문자열(String)은 참조형 자료형이며 큰따옴표를 사용함
+- 문자열은 덧셈(+)로 이어 붙일 수 잇음
+- 문자열에 정수혹은 실수 리터럴을 더하면 자동으로 수를 문자열로 변환하여 함게 문자열로 출력 해 줌
 
-
-        //참조형 (Reference Type)
-        // 값을 지정하지 않고 값이 저장된 주소를 저장 // 이정도만 알고 뒤에서 더알자
-        
-        //문자열 (String)
+```$xslt
         System.out.println("String");
         String s = "This is a new string.";
         System.out.println(s);
@@ -176,17 +206,23 @@ public class Main {
         //s2와 s3는 똑같은 과정을 거쳐서 STring으로변환되는것이고 자바에서 평의기능을 제공한 것임
 
         //다른 실수형 자료형에서도 똑같이 자동변환이 일어난다
+```
 
 
-        */
+### 형변환 (Type Casting)
 
+- 변수의 자료형을 바꿔주는 것을 형변환이라고 함
+- 변수앞에 (자료형)을 넣어주어 형변환을 함
+- 범위가 작은쪽에서 큰쪽 혹은 정밀도가 낮은쪽에서 높은쪽으로 형변환하는 것을 업캐스팅이라고함
+- 반대의 경우를 다운캐스팅이라고 하고 데이터가 소실 될 수 있음으로 주의하여야 함
 
-       /* //형변환(Type Casting)
+```$xslt
+/* //형변환(Type Casting)
         System.out.println("Casting");
         int intValue = (int)100.9;
         System.out.println(intValue); //100 // 캐스팅 시 값이 소실이 됨
 
-
+      
         //Upcasting
         System.out.println("Upcasting"); // 범위가 작은 쪽 -> 범위가 큰 쪽
                                         //또는 정밀도가 낮은 쪽 - > 정밀도가 큰 쪽(실수)
@@ -223,10 +259,12 @@ public class Main {
                                     // 문제가 생길 소지가 있기에 캐스팅을 해줘야함
 
         char charVal = 4123; // 큰 숫자지만 char의 범위안임.
-        byte byteVal = (byte)charVal;
+        byte byteVal = (byte)charVal; // Char의 범위 > byte의 범위
         System.out.println(byteVal); //27 // 데이터 손실 발생
 
 
+```
 
-    }
-}
+
+
+
