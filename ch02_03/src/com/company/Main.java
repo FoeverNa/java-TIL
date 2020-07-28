@@ -79,14 +79,17 @@ public class Main {
 
         // 정수 4개를 입력 받는다. 다른 자료형 입력 받으면 에러발생
 
-        //다른형은 TIL작성하면서 해보기
+        System.out.println(scanner.nextDouble());
+        System.out.println(scanner.nextDouble());
+        System.out.println(scanner.nextDouble());
+
 
         // \n으로 구분이 되는 String을 입력 받는다.
         // \n은 키보드에서는 엔터를 의미함
 
-        System.out.println(scanner.nextLine());
-        System.out.println(scanner.nextLine());
-        System.out.println(scanner.nextLine());
+//        System.out.println(scanner.nextLine());
+//        System.out.println(scanner.nextLine());
+//        System.out.println(scanner.nextLine());
 
     }
 }
