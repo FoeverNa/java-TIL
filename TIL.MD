@@ -15,3 +15,11 @@
 ##Operator(연산자)
 
 [TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch02_04/src/com/company/Operator.md)
+
+##Conditional Statements(조건문)
+
+[TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch02_05/src/com/company/ConditionalStatements.md)
+
+##Loops(반복문)
+
+[TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch02_06/src/Loops.md)
