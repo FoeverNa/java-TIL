@@ -38,12 +38,8 @@ public class ThreeSixNineAdvanced {
             int num1 = i % 10;
             int num2 = (i % 100) / 10;
             int num3 = i / 100;
-            int numClap1 = 0;
-            int numClap2 = 0;
-            int numClap3 = 0;
-            int numKung1 = 0;
-            int numKung2 = 0;
-            int numKung3 = 0;
+            int numClap = 0;
+            int numKung = 0;
 
 
             if((i-3)% 12 !=0){
@@ -52,26 +48,24 @@ public class ThreeSixNineAdvanced {
 
 
             if (num1 == 3 || num1 == 6 || num1 == 9) {
-                numClap1++;
+                numClap++;
             }
             if (num2 == 3 || num2 == 6 || num2 == 9) {
-                numClap2++;
+                numClap++;
             }
             if (num3 == 3 || num3 == 6 || num3 == 9) {
-                numClap3++;
+                numClap++;
             }
             if (num1 == 5) {
-                numKung1++;
+                numKung++;
             }
             if (num2 == 5) {
-                numKung2++;
+                numKung++;
             }
             if (num3 == 5) {
-                numKung3++;
+                numKung++;
             }
 
-            int numClap = numClap1 + numClap2 + numClap3;
-            int numKung = numKung1 + numKung2 + numKung3;
 
             if (numClap == 0 && numKung == 0) {
                 System.out.println(i);
