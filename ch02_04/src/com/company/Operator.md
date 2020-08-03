@@ -65,9 +65,8 @@
                                                             
         System.out.println(maxVal);
         System.out.println(maxVal1);
-        int minVal = 0b10000000000000000000000000000001;// +1을 해준 결과
         //맨앞자리가 0이면 양수 1이면 음수
-        // 원래는 1의 보수구할때는 역수를하고 +1을하면 음수가나옴//근데 maxval minval에서는 0을 표현해야되서 min이 1더많잖아 그래서 -1더해줘야함
+        // 원래는 2의 보수구할때는 역수를하고 +1을하면 음수가나옴//근데 maxval minval에서는 0을 표현해야되서 min이 1더많잖아 그래서 +1을하고 -1해줘서 0이됨.
         
         System.out.println(minVal);
         //1's C 1의 보수 , 2진수의 음수를 만들기 위한 값
