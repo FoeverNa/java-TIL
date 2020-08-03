@@ -23,3 +23,11 @@
 ## Loops(반복문)
 
 [TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch02_06/src/Loops.md)
+
+## Arrays(배열)
+
+[TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch02_07/src/com/company/Array.md)
+
+## N-D Arrays(다차원배열)
+
+[TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch02_08/src/com/company/N-D%20Arrays.md)
