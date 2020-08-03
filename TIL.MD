@@ -31,3 +31,9 @@
 ## N-D Arrays(다차원배열)
 
 [TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch02_08/src/com/company/N-D%20Arrays.md)
+
+## Object Oriented Programming; OOP(객체 지향 프로그래밍)
+[TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch03/src/s02/OPP.md)
+
+## Class(클래스)
+[TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch03/src/s02/Class.md)
