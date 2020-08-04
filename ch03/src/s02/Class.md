@@ -85,7 +85,7 @@ public class Main {
 - 클래스 멤버 변수 (static variable, class variable)
 - 인스턴스 멤버 변수 (member variable, attribute, ..)
 - 로컬 변수 (local variable)
-- 로컬 파라미터 변수 (local parameter variable) (arguments)
+- 로컬 파라미터 변수 (local parameter variable) (arguments)(매개변수)
                     
 ```
 // 클래스에서 변수 생성
