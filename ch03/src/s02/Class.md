@@ -130,7 +130,7 @@ class variableTest{
         System.out.println("인스턴스 멤버 변수");
         Variables var = new Variables();
         System.out.println(var.instanceVar);//0 // 인스턴스 변수도 0으로 초기화됨 - 특이 케이스
-        //Variables.instanceVar // 접근 불가능, 인스턴스 만들어야 객체(실체)가 생기기 때문
+        //Variables.instanceVar // 클래스명으로는 인스턴스 변수 접근 불가능, 인스턴스 만들어야 객체(실체)가 생기기 때문
         var.instanceVar = 20;
         System.out.println(var.instanceVar);//20
         System.out.println("");
