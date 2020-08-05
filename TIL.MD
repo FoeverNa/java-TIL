@@ -32,6 +32,10 @@
 
 [TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch02_08/src/com/company/N-D%20Arrays.md)
 
+## String(문자열)
+
+[TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch02_09/src/com/company/String.md)
+
 ## Object Oriented Programming; OOP(객체 지향 프로그래밍)
 [TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch03/src/s02/OPP.md)
 
