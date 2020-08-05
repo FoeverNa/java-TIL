@@ -247,9 +247,10 @@ public class Constructor {
     }
 
     //생성자는 클래스이름, return이없기에 return type적지 않음
+    //기본 생성자의 오버로딩
     public Constructor(int a, int b) {
         this(a, b, "");  // 이전 생성자를 불러오는 this.
-        //this.는 무조건 첫줄에 사용할 수 있다.
+        //this.는 무조건 첫줄에 사용 해야 함.
         //가장 긴 파라미터를 기준으로 짧은것을 this로 불러올 수 있다.
     }
 
