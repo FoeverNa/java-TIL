@@ -57,6 +57,7 @@ class Person {
         System.out.println(korWord+"입니다.");
         // 클래스 메소드는 클래스 변수를 사용할 수 있다.
         // 단, 객체에 속하는 속성은 사용할 수 없다.
+        // isHungry = flase; => 에러, 인스턴스 사용 
     }
     // 인스턴스 메소드
     public void eat(){
