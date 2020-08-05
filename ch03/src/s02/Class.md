@@ -142,7 +142,7 @@ class variableTest{
                                           // 클래스명으로해서 클래스전체에 속한 변수라는 것을 명확히 하며 사용하라는 뜻
         System.out.println("");
 
-        //Variables.method(); // 잘못된 접근, 객체로 접근해야함
+        //Variables.method(); // 클래스명으로 인스턴스 메서드에 접근 불가. 객체로 접근해야함
 
         var.method(9);
         // System.out.println(var.method(9)); //return값이 있어야 가능함
