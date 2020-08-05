@@ -24,7 +24,7 @@ public class Main {
         Car carOne = new Car(); // new 키우드로 클래스에서 객체 생성(Instanciation)
                                 // 자료형은 클래스명 변수명은 camelCase = new 클래스명();
         System.out.println(carOne.speed);//0//.으로 속성 접근 가능
-        carOne.move();
+        carOne.move();// move()메소드 사용
         System.out.println(carOne.speed);//10 // move()메서드가 속성을 변경함
 
         Car carTwo = new Car();

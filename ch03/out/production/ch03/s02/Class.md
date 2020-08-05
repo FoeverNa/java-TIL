@@ -4,7 +4,7 @@
 
 - 클래스 - 객체를 생성하기 위한 설계도 (Class)
 - 객체 - 클래스를 구체화하여 값으로 생성된 것(Object, instance)
-- 클래스를 객체로 만드는 과정 - Instanciation 라고 함
+- 클래스를 객체로 만드는 과정 - Instaciation 라고 함
 
 ## 클래스의 구성
 
