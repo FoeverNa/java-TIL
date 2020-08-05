@@ -14,7 +14,7 @@
          // Return type(출력의 자료형)
     public int add(int x, int y){ // 입력 파라미터 (메서드 호출시 같이 입력)
         return x + y ; //반환 값(Return value)
-    } // return 값이 있기 때문에 정의가 되있는것이다. 변수는 어떻다고했는데
+    } // 메서드에 선언부와 실행문을 같이 작성하면 메서드가 정의됨 / 선언부만 작성하면 
 
     // int를 반환하는 add라는 메서드인데 int x,y를 입력받는다 => 선언!
     //선언(Declaration) - ~한 것이 있다. 실제 구현은 X
