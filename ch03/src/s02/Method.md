@@ -50,7 +50,7 @@
 
 ```
 class Person {
-    static String korWord = "사람";
+    static String korWord = "사람"; // 클래스 
     boolean isHungry = true; // 인스턴스 멤버 변수
     // 클래스 메소드
     public static void describe(){
