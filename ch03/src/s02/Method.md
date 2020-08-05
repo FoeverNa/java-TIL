@@ -158,7 +158,7 @@ class Bar{
 
 //실행부
         System.out.println(Bar.sumAll(2,3,4,1,3,24,346,1,2,34,-123,-12,2));// 287
-        System.out.println(Bar.sumAll(2.2f,0.2f,3.2f,56.23f));// 287
+        System.out.println(Bar.sumAll(2.2f,0.2f,3.2f,56.23f));// 61.83 // int, float 동시 
         // println이 자료형에 상관없이 동장하는 이유 = 오버로딩
 ```
   - 같은 data type에 여러개의 파라미터를 입력할 때 가변 인자를 사용함
