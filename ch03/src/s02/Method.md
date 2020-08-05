@@ -137,7 +137,7 @@ class Bar{
 
 ```
                                // 여러개의 int를 입력 받는다.
-                               // 입력 받은 결과는 배열로 주어진다.
+                               // 입력 받은 결과는 배열로 주어진다.(params는 배열명, 바뀔수 있음)
                                // 가변 인자(Variable arguments) 인자가 변한다.
     public static int sumAll(int... params){
         int sum = 0;
