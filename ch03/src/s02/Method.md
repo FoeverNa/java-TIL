@@ -216,7 +216,9 @@ public class Constructor {
 //    public Constructor() {} 기본 생성자, 구현하지 않아도 알아서 생긴다.(생략가능)
 
   public Constructor() {
-        this(1, 2, "");
+        x = 1;
+        y = 20;
+        z = ("");
     }
 
 // 실행부
