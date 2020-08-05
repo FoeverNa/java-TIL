@@ -21,7 +21,7 @@
     //정의(Definition) - 선언 + 구현(초기화)
 
      //정적 메소드(static method), 클래스 메소드
-    // void return type은 return이 없음.(return이라고 적어도 되지만 안적어도됨)
+    // void return type은 return이 없음.(retu이라고 적어도 되지만 안적어도됨)
     public static void classMethod(){
         System.out.println("클래스메소드 호출");
     }
