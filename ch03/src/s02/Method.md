@@ -28,7 +28,8 @@
 
   // 실행부
     public class Method {
-    // main 메소드에서 실행이 되는 것은 약속. main메서드도 static 메서드
+    // main 메소드에서 java프로그램이 실행이 되는 것은 약속. 
+    //main메서드도 static 메서드(인스턴스 호출없이도 실행은 되어야 되기 때문에)
     public static void main(String[] args) {
         Bar.classMethod(); //클래스메소드 호출 // 클래스메서드는 바로 콜이됨
         //Bar.add(1,2); // 콜이 되지 않음
