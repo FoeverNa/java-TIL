@@ -402,12 +402,18 @@ class MainTest{
         System.out.println(main.instanceVar);//30 // object initialize에서 초기화됨
         System.out.println(Main.classVar);//20
 
-        Main main2 = new Main();
-        System.out.println(Main.instancecount);
-        Main main3 = new Main();
-        System.out.println(Main.instancecount);
+       Main main2 = new Main();
+        System.out.println(Main.instancecount); //block1
+//                                                block2
+//                                                 2
+                                                   
+        Main main3 = new Main();                
+        System.out.println(Main.instancecount);//block1
+//                                               block2
+//                                                 3
     }
 }
+
 ```
 
 - static initializer는 클래스가 생성 될 때 실행됨. 보통은 클래스를 import할 때 클래스가 생성됨 

@@ -1,4 +1,4 @@
-package s02.p04;
+package p04;
 
 /**
  * 메소드 (Methods)

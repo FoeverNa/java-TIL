@@ -147,5 +147,8 @@ class Vector3DTest {
         System.out.println(v1.inner(v2));
         v1.mult(1.2f).print();
         System.out.println(v2.mag());
+
+
+
     }
 }

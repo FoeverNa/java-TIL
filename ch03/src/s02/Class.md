@@ -72,7 +72,6 @@ public class Main {
         
         String string = "String!!!"; // 힙 영역(변수자체는 힙영역에 생성), 상수풀("String!!!"은 상수풀에 생성)
         // string은 클래스이기 때문에 값을 생성하는게 아닌 상수풀에 잡힌 값을 참조하는 참조값이 담기게 됨
-        // String을 인스턴스를 생성해서 정의하게 되면 값이 상수풀이 아닌 힙영역에 
         
         public void method(int value) {// 클래스 영역'
             // int value => 스택 영역 // 
@@ -86,7 +85,7 @@ public class Main {
 - 클래스 멤버 변수 (static variable, class variable)
 - 인스턴스 멤버 변수 (member variable, attribute, ..)
 - 로컬 변수 (local variable)
-- 로컬 파라미터 변수 (local parameter variable) (arguments)(매개변수)
+- 로컬 파라미터 변수 (local parameter variable) (arguments)
                     
 ```
 // 클래스에서 변수 생성
