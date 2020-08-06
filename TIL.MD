@@ -41,3 +41,9 @@
 
 ## Class(클래스)
 [TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch03/src/s02/Class.md)
+
+## Method(메소드)
+[TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch03/src/s02/Method.md)
+
+## JavaDoc 주석
+[TIL](https://github.com/FoeverNa/java-TIL/blob/master/ch03/src/s03/p01/JavaDocs.md)

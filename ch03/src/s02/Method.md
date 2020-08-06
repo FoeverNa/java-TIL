@@ -14,21 +14,22 @@
          // Return type(출력의 자료형)
     public int add(int x, int y){ // 입력 파라미터 (메서드 호출시 같이 입력)
         return x + y ; //반환 값(Return value)
-    } // return 값이 있기 때문에 정의가 되있는것이다. 변수는 어떻다고했는데
+    } // 메서드에 선언부와 실행문을 같이 작성하면 메서드가 정의됨 / 선언부만 작성하면 선언만됨
 
-    // int를 반환하는 add라는 메서드인데 int x,y를 입력받는다 => 선언!
+    // int를 반환하는 add라는 메서드인데 int x,y를 입력받는다 => !
     //선언(Declaration) - ~한 것이 있다. 실제 구현은 X
     //정의(Definition) - 선언 + 구현(초기화)
 
      //정적 메소드(static method), 클래스 메소드
-    // void return type은 return이 없음.(return이라고 적어도 되지만 안적어도됨)
+    // void return type은 return이 없음.(retu이라고 적어도 되지만 안적어도됨)
     public static void classMethod(){
         System.out.println("클래스메소드 호출");
     }
 
   // 실행부
     public class Method {
-    // main 메소드에서 실행이 되는 것은 약속. main메서드도 static 메서드
+    // main 메소드에서 java프로그램이 실행이 되는 것은 약속. 
+    //main메서드도 static 메서드(인스턴스 호출없이도 실행은 되어야 되기 때문에)
     public static void main(String[] args) {
         Bar.classMethod(); //클래스메소드 호출 // 클래스메서드는 바로 콜이됨
         //Bar.add(1,2); // 콜이 되지 않음
@@ -42,20 +43,21 @@
 - 클래스 매서드는 인스턴스 없이 클래스명으로 바로 호출 가능
 - 인스턴스 메서드는 인스턴스 생성 후 호출 가능
 - 선언은 ~한 것이 있다고 얘기하는 것이고 정의는 선언+구현(초기화)한 것을 말함
-- 클래스 변수는 클래스 생성과 동시에 초기화되고 인스턴스 변수는 인스턴스생성시 초기화됨
+- 클래스 변수는 클래스 생성(import하는 순간 클래스생성)과 동시에 초기화되고 인스턴스 변수는 인스턴스생성시 초기화됨
 - 메서드는 실행문 작성시 초기화되고 실행문은 빈{]도 포함됨/ 선언부만 있는것이 선언한 상태(추상메서드)
 
 ### 클래스 메서드와 인스턴스 메서드
 
 ```
 class Person {
-    static String korWord = "사람";
+    static String korWord = "사람"; // 클래스 
     boolean isHungry = true; // 인스턴스 멤버 변수
     // 클래스 메소드
     public static void describe(){
         System.out.println(korWord+"입니다.");
         // 클래스 메소드는 클래스 변수를 사용할 수 있다.
         // 단, 객체에 속하는 속성은 사용할 수 없다.
+        // isHungry = flase; => 에러, 인스턴스 사용 
     }
     // 인스턴스 메소드
     public void eat(){
@@ -135,7 +137,7 @@ class Bar{
 
 ```
                                // 여러개의 int를 입력 받는다.
-                               // 입력 받은 결과는 배열로 주어진다.
+                               // 입력 받은 결과는 배열로 주어진다.(params는 배열명, 바뀔수 있음)
                                // 가변 인자(Variable arguments) 인자가 변한다.
     public static int sumAll(int... params){
         int sum = 0;
@@ -156,12 +158,12 @@ class Bar{
 
 //실행부
         System.out.println(Bar.sumAll(2,3,4,1,3,24,346,1,2,34,-123,-12,2));// 287
-        System.out.println(Bar.sumAll(2.2f,0.2f,3.2f,56.23f));// 287
+        System.out.println(Bar.sumAll(2.2f,0.2f,3.2f,56.23f));// 61.83 // int, float 동시 
         // println이 자료형에 상관없이 동장하는 이유 = 오버로딩
 ```
   - 같은 data type에 여러개의 파라미터를 입력할 때 가변 인자를 사용함
   - 자료형... params을 사용
-  - 입력 받은 결과는 배열로 주어짐 // data type[] params;
+  - 입력 받은 결과는 배열로 주어짐 // dataType[] params; // params는 배열명 - 바뀔 수 있음
   - 같은 함수명을 갖고 입력인자가 달라서 여러가지 data type을 입력 받을 수 있게 하는 것을 메서드를 오버로딩이라고함
   - 입력 인자의 갯수도 다를 수 있고 대표적인 예로 prinln()이 있음
   
@@ -214,7 +216,9 @@ public class Constructor {
 //    public Constructor() {} 기본 생성자, 구현하지 않아도 알아서 생긴다.(생략가능)
 
   public Constructor() {
-        this(1, 2, "");
+        x = 1;
+        y = 20;
+        z = ("");
     }
 
 // 실행부
@@ -243,9 +247,10 @@ public class Constructor {
     }
 
     //생성자는 클래스이름, return이없기에 return type적지 않음
+    //기본 생성자의 오버로딩
     public Constructor(int a, int b) {
         this(a, b, "");  // 이전 생성자를 불러오는 this.
-        //this.는 무조건 첫줄에 사용할 수 있다.
+        //this.는 무조건 첫줄에 사용 해야 함.
         //가장 긴 파라미터를 기준으로 짧은것을 this로 불러올 수 있다.
     }
 
@@ -259,6 +264,7 @@ public class Constructor {
 ```
 - 파라미터 생성자는 입력 인자를 입력 받는 메서드로 기본 생성자를 오버로딩 하여 만든 메서드
 - 필요에 따라 다양한 파라미터를 조합하여 생성자를 만들어서 사용함
+- 파라미터 생성자를 생성하면 생략되어 있는 생성자는 사용 못함 => 필요하면 기본생성자 
 
 ### this 키워드
 
@@ -266,6 +272,7 @@ public class Constructor {
 - 위와 같이 사용하는 경우 실행문에 첫줄에만 사용 가능함
 - 또한 this는 멤버 변수명과 인력인자명이 같을 경우에 멤버 변수를 가르키는 용도로도 사용됨.
 - this를 사용하는 이유는  코드 중복을 최소화하여 실수를 방지 하기 위하여 사용함 // 중복을 최소로 할 수록 좋은 코드가 됨
+- 정확히 this는 객체를 참조함. - // 이 개념을 조금더 명확히 이해하고 싶네.
 
 
 ## Getter, Setter
