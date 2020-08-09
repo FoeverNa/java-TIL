@@ -106,3 +106,5 @@ System.out.printf("%s is for string\n", "STRING"); //%s는 스트링자리, newl
 //        System.out.println(scanner.nextLine());
 
 ```
+
+input & output oyoyo

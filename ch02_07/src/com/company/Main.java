@@ -94,6 +94,6 @@ public class Main {
         for(int integer: dst2){
             System.out.println(integer);
         }
-
+        Arrays
     }
 }
